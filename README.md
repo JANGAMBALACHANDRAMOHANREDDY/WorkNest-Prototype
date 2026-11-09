@@ -302,10 +302,41 @@ Interested in building innovative, data-driven applications and intelligent digi
 
 ### Connect With Me
 
-- **GitHub:** [JANGAMBALACHANDRAMOHANREDDY](https://github.com/JANGAMBALACHANDRAMOHANREDDY)
-- **LinkedIn:** [Connect on LinkedIn](https://www.linkedin.com/in/jangam-balachandramohanreddy/)
+- ## Author
+
+**Jangam Balachandra Mohan Reddy**
+
+Data Analytics & AI Enthusiast | Software Developer | Technology Explorer
+
+Passionate about building innovative, data-driven applications and intelligent systems that solve real-world problems.
+
+### Connect With Me
+
+<p align="center">
+  <a href="mailto:jangambalachandramohanreddy@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://github.com/JANGAMBALACHANDRAMOHANREDDY">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/jangam-balachandramohanreddy/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://jangam-bala-chandramohan-reddy.lovable.app">
+    <img src="https://img.shields.io/badge/Portfolio-6C63FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
+  </a>
+</p>
+
+- **Email:** jangambalachandramohanreddy@gmail.com
+- **GitHub:** https://github.com/JANGAMBALACHANDRAMOHANREDDY
+- **LinkedIn:** https://www.linkedin.com/in/jangam-balachandramohanreddy/
+- **Portfolio:** https://jangam-bala-chandramohan-reddy.lovable.app
 
 ---
+
+<p align="center">
+  <strong>Let's Connect and Build Something Innovative!</strong>
+</p>
 
 ## License
 
