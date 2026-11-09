@@ -25,6 +25,8 @@
 The project focuses on improving employee productivity, simplifying team collaboration, and providing a seamless user experience through a professional dashboard and intuitive navigation.
 
 It demonstrates how different workplace operations can be organized into a single, accessible digital environment.
+<img width="1896" height="910" alt="image" src="https://github.com/user-attachments/assets/d435f69c-6a9e-47c9-b9f5-d7103f7bc2f6" />
+
 
 ## Key Features
 
