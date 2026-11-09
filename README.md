@@ -294,11 +294,6 @@ All employee names, projects, activities, and other demonstration records are fi
 
 ## Author
 
-
-### Connect With Me
-
-
-
 **Jangam Balachandra Mohan Reddy**
 
 Data Analytics & AI Enthusiast | Software Developer | Technology Explorer
