@@ -1,162 +1,322 @@
-# WorkNest
+# WorkNest – Employee Workspace Platform
 
-A polished personal prototype of an all-in-one corporate employee workspace. Built for demonstrating UI/UX and everyday employee workflows in VS Code.
+<p align="center">
+  <strong>A Modern, All-in-One Employee Workspace Prototype</strong>
+</p>
 
-## Important scope
+<p align="center">
+  A centralized digital workspace designed to simplify everyday employee workflows through a clean, responsive, and intuitive interface.
+</p>
 
-This version uses **TypeScript/Hono, HTML, CSS, and JavaScript — not Python/Django**. It is an interactive frontend prototype with a lightweight Hono web server and health API, not a production full-stack HR system.
+<p align="center">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white" alt="Hono" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge" alt="Prototype" />
+</p>
 
-All employees, activity, emails, policies, and dates are fictional. The demo is anchored to **November 9, 2026** for repeatable presentations. Changes are kept only in the current page's browser memory and reset on refresh. Nothing is sent to real employees or managers. No database, login, API token, Cloudflare account, or payment is needed to run the local demo.
+---
 
-## Run in VS Code
+## About the Project
+
+**WorkNest** is a modern employee workspace prototype that brings essential workplace tools and everyday employee activities together in one centralized platform.
+
+The project focuses on improving employee productivity, simplifying team collaboration, and providing a seamless user experience through a professional dashboard and intuitive navigation.
+
+It demonstrates how different workplace operations can be organized into a single, accessible digital environment.
+
+## Key Features
+
+### 1. Interactive Dashboard
+- Centralized employee workspace overview.
+- Task summaries and project progress.
+- Daily agenda and announcements.
+- Quick actions for everyday activities.
+
+### 2. Project Management
+- Browse and filter projects.
+- Create demonstration projects.
+- Explore project tasks and details.
+
+### 3. Task Management
+- Interactive Kanban-style task board.
+- Create and organize tasks.
+- Set priorities and due dates.
+- Track To Do, In Progress, and Done tasks.
+
+### 4. Employee Directory
+- Search employees and teammates.
+- Filter employees by department.
+- View individual employee profiles.
+
+### 5. Calendar Management
+- Interactive monthly calendar.
+- Create and view calendar events.
+- Select dates and inspect event details.
+
+### 6. Leave Management
+- View sample leave balances.
+- Submit leave requests.
+- Validate date ranges and calculate weekdays.
+- Track and cancel pending requests.
+
+### 7. Help Desk
+- Create support tickets.
+- View ticket details.
+- Update ticket resolution status.
+
+### 8. Document Management
+- Browse shared sample documents.
+- Search available resources.
+- Preview and download demonstration text documents.
+
+### 9. Settings and Personalization
+- Update the demonstration user profile.
+- Customize dashboard greetings.
+- Manage session-based settings.
+
+### 10. Additional Capabilities
+- Global search with `Ctrl + K` / `Cmd + K`.
+- Notification interface and announcements.
+- Responsive mobile navigation.
+- Accessible dialogs and keyboard interactions.
+- Reduced-motion support.
+
+---
+
+## Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| TypeScript | Application and server-side development |
+| Hono | Lightweight web server and API |
+| Vite | Development server and build tooling |
+| HTML5 | Application structure |
+| CSS3 | Styling, layouts, and responsive design |
+| JavaScript | Interactive frontend functionality |
+| Node.js | JavaScript runtime |
+| Cloudflare Pages/Workers | Target deployment compatibility |
+
+---
+
+## Project Structure
+
+```text
+WorkSpace-Prototype/
+│
+├── public/
+│   └── static/
+│       ├── app.js
+│       └── style.css
+│
+├── src/
+│   └── index.tsx
+│
+├── .gitignore
+├── ecosystem.config.cjs
+├── package.json
+├── package-lock.json
+├── pnpm-workspace.yaml
+├── tsconfig.json
+├── vite.config.ts
+├── wrangler.jsonc
+└── README.md
+```
+
+### Important Files
+
+- `src/index.tsx` – Hono server, application shell, routes, and health endpoint.
+- `public/static/app.js` – Frontend logic, UI components, sample data, and interactions.
+- `public/static/style.css` – Design system, styling, animations, and responsive layouts.
+- `vite.config.ts` – Vite development and build configuration.
+- `wrangler.jsonc` – Cloudflare compatibility and deployment configuration.
+- `package.json` – Project dependencies and npm scripts.
+
+---
+
+## Getting Started
+
+Follow these instructions to run WorkNest locally on your computer.
 
 ### Prerequisites
 
-- Visual Studio Code.
-- **Node.js 22.12 or newer** (Node 22 LTS recommended) and npm. Check with `node --version` and `npm --version`.
-- A modern browser. Internet is needed to install dependencies. Google Fonts are optional; the UI falls back to system fonts if unavailable.
+Make sure you have installed:
 
-### Start the project (Windows, macOS, or Linux)
+- [Node.js 22.12 or newer](https://nodejs.org/)
+- npm
+- [Visual Studio Code](https://code.visualstudio.com/)
+- A modern web browser
 
-1. Extract the source ZIP.
-2. In VS Code, choose **File > Open Folder**, and select the extracted `worknest` folder containing `package.json`.
-3. Open **Terminal > New Terminal**.
-4. Run:
+### Installation
 
-```sh
+**Step 1: Clone the repository**
+
+```bash
+git clone https://github.com/JANGAMBALACHANDRAMOHANREDDY/WorkSpace-Prototype.git
+```
+
+**Step 2: Navigate to the project directory**
+
+```bash
+cd WorkSpace-Prototype
+```
+
+**Step 3: Install dependencies**
+
+```bash
 npm install
+```
+
+**Step 4: Start the development server**
+
+```bash
 npm run dev
 ```
 
-5. Open **http://localhost:3000** in your browser. If port 3000 is already occupied, use the URL printed by Vite.
-6. Leave the terminal running while presenting. Stop it with **Ctrl+C**.
+**Step 5: Open the application**
 
-The app is not a standalone HTML file: opening a source file with the Live Server extension will not run the Hono backend. Use the commands above instead.
+Visit:
 
-On Windows, if PowerShell reports that `npm.ps1` cannot run, switch the VS Code terminal to **Command Prompt**, or use `npm.cmd install` and `npm.cmd run dev`. Do not disable system security policies just for this project.
+```text
+http://localhost:3000
+```
 
-### Test the production build locally
+The WorkNest application should now be running locally.
 
-```sh
+Keep the terminal open while using the application. Press `Ctrl + C` to stop the development server.
+
+### Production Build
+
+To generate and test a production build locally:
+
+```bash
 npm run build
+```
+
+Then run:
+
+```bash
 npm run preview
 ```
 
-Open http://localhost:3000. Stop the development server first so only one server uses that port. Local development and preview do not require Cloudflare login.
+Open the local URL printed by Vite.
 
-## Completed features
+---
 
-- Responsive dashboard with a forest-green/lime design system, custom CSS illustration, task summary, project previews, daily agenda, announcements, and quick actions.
-- Projects: browse, filter, create a demo project, and inspect its tasks.
-- My tasks: create tasks, choose a project/priority/date, and move between To do, In progress, and Done using action buttons. Dashboard checkboxes also update task state.
-- People: search fictional teammates, filter by department, and view profiles.
-- Calendar: browse months, select dates, create events, and inspect event details.
-- Leave: sample balances, request form, date-range validation, weekday duration calculation, request details, and cancellation of pending requests.
-- Help desk: create demo support tickets, inspect details, and mark tickets as resolved.
-- Documents: search shared sample resources, preview content, and download readable demo `.txt` copies. These are not original PDF/DOC files.
-- Settings: update the current demo profile and dashboard greeting for this session.
-- Global search across pages, projects, teammates, and documents. Open with Ctrl+K (Windows/Linux) or Cmd+K (macOS).
-- Notification dialog with mark-all-read, announcements, quick guide, toast feedback, and mobile navigation.
-- Keyboard-accessible dialogs with Escape dismissal and a focus trap; reduced-motion styling.
+## Application Navigation
 
-## Recommended five-minute presentation
+| Route | Description |
+|---|---|
+| `/#dashboard` | Main employee dashboard |
+| `/#projects` | Project management |
+| `/#tasks` | Task management board |
+| `/#people` | Employee directory |
+| `/#calendar` | Calendar and events |
+| `/#leave` | Leave management |
+| `/#helpdesk` | Employee support tickets |
+| `/#documents` | Shared documents |
+| `/#settings` | Profile and settings |
+| `/api/health` | Application health endpoint |
 
-1. **Overview:** explain the goal — centralize employees' everyday tools into one calm workspace.
-2. **Quick actions > Create a task:** add a task, show the Kanban board, start it, then mark it complete.
-3. **People:** filter by Design, search Sophia, and open the profile.
-4. **Leave & attendance:** request a three-day weekday break, show the pending status, then cancel it.
-5. **Help desk:** raise a ticket, open it, and mark it resolved.
-6. **Calendar:** create a meeting on a selected date and show its details.
-7. **Documents:** open the employee handbook and download the sample text.
-8. **Settings:** update your demo name; return to Overview to show the changed greeting.
-9. Resize the browser to demonstrate the mobile menu and responsive cards.
-10. Refresh to restore the original sample data before the next presentation.
+---
 
-## Code explanation map
+## Application Architecture
 
-| File | Purpose |
-| --- | --- |
-| `src/index.tsx` | Hono server, HTML document shell, sidebar/header, static routes, and health endpoint |
-| `public/static/app.js` | SVG icons, fictional demo data, reusable UI components, page templates, client-side routing, validation, dialogs, and delegated event listeners |
-| `public/static/style.css` | Design tokens, typography, layouts, component styles, animations, and responsive breakpoints |
-| `vite.config.ts` | Vite development integration and Cloudflare Pages build adapter |
-| `wrangler.jsonc` | Cloudflare compatibility and output configuration; no service bindings |
-| `package.json` | npm scripts and dependencies |
-| `ecosystem.config.cjs` | Sandbox-only PM2 configuration; not needed for your local VS Code demo |
+WorkNest follows a lightweight client-server architecture.
 
-### How the application works
+1. The browser sends a request to the Hono server.
+2. Hono serves the application HTML shell.
+3. Vite serves the frontend assets during development.
+4. JavaScript handles navigation, rendering, and user interactions.
+5. Forms validate user input and update temporary demonstration data.
+6. The application displays updated information without requiring a database.
 
-1. A browser requests `/` from the Hono server.
-2. Hono returns the HTML shell and links the CSS and client JavaScript.
-3. JavaScript reads the URL hash and renders the selected workspace view.
-4. Button `data-*` attributes are handled by delegated event listeners.
-5. Forms use native browser validation plus JavaScript checks, update demo arrays, and rerender the UI.
-6. User-entered strings are HTML-escaped before insertion into templates.
-7. No form submits to an employee service or database. A future real backend would replace these array updates with authenticated API requests.
+### Data Storage
 
-## Entry URIs
+This version uses fictional sample data and temporary browser-memory state.
 
-The app is served at `/`, with these client-side hash routes:
+- No database is configured.
+- Changes reset when the page is refreshed.
+- No real employee information is stored.
+- No authentication or authorization system is implemented.
 
-| URI | View |
-| --- | --- |
-| `/#dashboard` | Overview and quick actions |
-| `/#projects` | Projects and project details |
-| `/#tasks` | Kanban task board |
-| `/#people` | Searchable employee directory |
-| `/#calendar` | Calendar and event creation |
-| `/#leave` | Leave balances and requests |
-| `/#helpdesk` | Support tickets |
-| `/#documents` | Shared resources |
-| `/#settings` | Demo profile settings |
-| `/api/health` | GET health response: `{ "status": "ok", "app": "WorkNest", "mode": "prototype" }` |
-| `/static/app.js` | Client-side application |
-| `/static/style.css` | Stylesheet |
+**Important:** WorkNest is currently an interactive UI/UX prototype, not a production-ready enterprise HR management system.
 
-No query parameters are required. Hash fragments are client-side UI navigation, not server access controls.
+---
 
-## Data architecture
+## Future Enhancements
 
-- **Models:** Person, Project, Task, LeaveRequest, SupportTicket, Document, CalendarEvent, Profile.
-- **Storage:** none. Fixed fixture arrays and temporary browser-memory changes only. No persistent storage service has been provisioned.
-- Project progress and team-wide counts include illustrative sample totals and are not a computed accounting system. Leave balances do not deduct pending requests.
-- No real personal information or credentials should be added to this prototype.
+The following improvements could help evolve WorkNest into a full-stack enterprise employee management platform:
 
-## Not implemented
+- [ ] User authentication and secure registration.
+- [ ] Role-based access control for employees, managers, and administrators.
+- [ ] Backend API integration.
+- [ ] Persistent database using PostgreSQL.
+- [ ] Real-time task and project updates.
+- [ ] Employee attendance management.
+- [ ] Advanced leave approval workflows.
+- [ ] Email and notification integrations.
+- [ ] Document upload and management.
+- [ ] Automated testing and CI/CD deployment.
+- [ ] Production deployment with a permanent domain.
 
-- Python/Django backend.
-- Authentication, registration, employee/manager/admin roles, or record authorization.
-- Persistent CRUD APIs or database storage.
-- Real manager approval, leave entitlements, holiday calendars, or attendance clock-in.
-- Real IT dispatch, chat, email, notifications, or video meeting integrations.
-- Document uploads or original PDF/DOC generation.
-- Multiple workspaces or invitations.
-- Drag-and-drop task movement (use the explicit action buttons).
+---
 
-## Recommended next steps
+## Testing
 
-1. Keep this version as a UI/UX presentation prototype.
-2. For a Cloudflare-based production implementation, add D1 relational storage and authenticated Hono APIs, then enforce record-level authorization.
-3. If Python is required later, move data and validation into Django/Django REST Framework with PostgreSQL on a Python-compatible host; reuse the visual design and frontend assets. Django cannot run on Cloudflare Pages.
-4. Add automated regression tests, audit contrast/accessibility, validate business rules, and configure secure production authentication before using any real company data.
+The prototype has undergone local development and build checks, including:
 
-## Testing performed
+- JavaScript syntax validation.
+- Vite production build verification.
+- Dashboard and module navigation checks.
+- Task and project interaction checks.
+- Leave request validation.
+- Support ticket workflows.
+- Calendar and global search interactions.
+- Desktop and mobile responsive layout checks.
 
-- JavaScript syntax check and Vite production build.
-- Browser checks for all eight main modules and settings.
-- Task creation/completion, project creation, employee filters/search, leave validation/cancellation, ticket creation/resolution, document preview/download, calendar events, global search, profile updates, announcements, and notification read state.
-- Desktop (1440px) and mobile (390px) layout checks, with no page-level horizontal overflow.
-- No browser runtime errors during the tested flows.
+---
 
-## Deployment status
+## Project Scope
 
-- **Local/sandbox preview:** running on port 3000.
-- **Temporary preview URL:** https://3000-i6rv1274ted3ahf7tjmqs-3c7ff1b5.sandbox.novita.ai
-- **Production deployment:** not performed; no permanent domain configured.
-- **Target compatibility:** Hono + Cloudflare Pages/Workers. Deployment is optional and separate from running locally.
-- **Database/secrets:** none.
-- **Last updated:** November 9, 2026.
+This repository is intended for:
 
-The temporary preview can stop when the sandbox sleeps; the downloaded source can be run locally whenever needed.
-#   W o r k S p a c e - P r o t o t y p e  
- 
+- UI/UX prototyping.
+- Frontend development demonstrations.
+- Employee workspace design concepts.
+- Learning modern web application development.
+- Portfolio and project presentation.
+
+All employee names, projects, activities, and other demonstration records are fictional.
+
+---
+
+## Author
+
+**Jangam Balachandra Mohan Reddy**
+
+Data Analytics and AI Enthusiast | Software Developer | Technology Explorer
+
+Interested in building innovative, data-driven applications and intelligent digital solutions.
+
+### Connect With Me
+
+- **GitHub:** [JANGAMBALACHANDRAMOHANREDDY](https://github.com/JANGAMBALACHANDRAMOHANREDDY)
+- **LinkedIn:** [Connect on LinkedIn](https://www.linkedin.com/in/jangam-balachandramohanreddy/)
+
+---
+
+## License
+
+This project does not currently specify an open-source license. All rights are reserved by the project author unless a license is added.
+
+---
+
+<p align="center">
+  <strong>WorkNest – Bringing Everyday Workflows Together.</strong>
+</p>
+
+<p align="center">
+  Built with passion for better digital workplace experiences.
+</p>
